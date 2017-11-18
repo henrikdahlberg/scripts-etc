@@ -1,0 +1,48 @@
+{
+    // workbench
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Zenburn",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.panel.location": "right",
+
+    // editor
+    "editor.tabSize": 4,
+    "editor.lineHeight": 16,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "IBM Plex Mono, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        80,
+        120
+    ],
+
+    //python
+    "python.linting.enabled": false,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=numpy"
+    ],
+
+    // latex workshop
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "--shell-escape",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        }
+    ],
+    
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+}

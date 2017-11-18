@@ -1,0 +1,5 @@
+code --install-extension gerane.Theme-Zenburn
+code --install-extension James-Yu.latex-workshop
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension ms-python.python
+code --install-extension Gimly81.matlab
