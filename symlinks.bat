@@ -1,0 +1,1 @@
+mklink %HOMEPATH%\.bashrc %HOMEPATH%\Documents\repos\scripts-etc\.bashrc
