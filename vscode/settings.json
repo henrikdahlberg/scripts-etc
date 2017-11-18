@@ -26,6 +26,12 @@
         "--extension-pkg-whitelist=numpy"
     ],
 
+    // MATLAB settings
+    // TODO: Find MATLAB path from environment variables
+    "matlab.matlabpath": "C:\\Program Files\\MATLAB\\R2017a",
+    "matlab.mlintpath": "C:\\Program Files\\MATLAB\\R2017a\\bin\\win64\\mlint.exe",
+    "matlab.lintOnSave": false,
+
     // latex workshop
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.latex.toolchain": [
