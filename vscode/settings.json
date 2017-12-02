@@ -3,7 +3,7 @@
     "workbench.editor.tabCloseButton": "off",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Zenburn",
+    //"workbench.colorTheme": "Zenburn",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.panel.location": "right",
 
