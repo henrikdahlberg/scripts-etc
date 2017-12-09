@@ -17,19 +17,31 @@
   "editor.lineHeight": 18,
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Menlo, 'DejaVu Sans Mono', 'IBM Plex Mono', Consolas, 'Courier New', monospace",
-  "editor.fontSize": 13,
+  "editor.fontSize": 16,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "boundary",
   "editor.renderIndentGuides": false,
   "editor.detectIndentation": true,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "editor.rulers": [
     80,
     120
   ],
-  //python
-  "python.linting.enabled": false,
+  // cmake
+  //"cmake.cmakePath": "C:\\CMake",
+  // python
+  "python.linting.enabled": true,
   "python.linting.pylintArgs": [
     "--extension-pkg-whitelist=numpy"
   ],
