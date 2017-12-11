@@ -12,3 +12,6 @@ alias gls='git log --all --decorate --oneline --graph --color=always | head --li
 alias gla='git log --graph --pretty=tformat:"%C(6)%an: %C(7)%s%n%C(2)%h%C(7): %C(5)%t%C(1)%d %C(3)% ar %C(4)%ad%n" --abbrev=5 --date=short --all'
 alias gl2='git log --graph --pretty=tformat:"%s%C(auto)%d%n%C(green)%an %C(yellow)%ar %C(red)%h%n" --date=short --all'
 alias gl2a='git log --graph --pretty=tformat:"%C(cyan)%ad %C(yellow)%an %C(green)%h%C(auto)%d%n%C(reset)> %s%n%n%C(reset)%b" --date=short --all'
+alias cls="echo -e '\\0033\\0143'"
+
+export TERM=cygwin

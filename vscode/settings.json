@@ -14,10 +14,10 @@
     "editorRuler.foreground": "#333333"
   },
   // editor
-  "editor.lineHeight": 18,
+  "editor.lineHeight": 16,
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Menlo, 'DejaVu Sans Mono', 'IBM Plex Mono', Consolas, 'Courier New', monospace",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "boundary",
   "editor.renderIndentGuides": false,
