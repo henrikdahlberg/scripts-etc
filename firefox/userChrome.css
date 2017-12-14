@@ -1,0 +1,128 @@
+/* Dev tools */
+
+:root {
+  --theme-toolbar-background: #000;
+}
+
+.theme-body,
+.theme-selected,
+.CodeMirror-hint-active
+{
+  background: #000 !important;
+}
+
+
+/* Browser */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+/* https://www.reddit.com/r/firefox/comments/6rp0yv/can_we_have_a_big_userchromecss_thread/ */
+
+:root {
+  --ui-basecolor: #000;
+  --ui-background: #000;
+  --ui-darkcolor: #000;
+  --theme-body-background: #000;
+  --theme-sidebar-background: #000;
+
+  /* --ui-accent: #00a; */
+
+  /* --tab-selection-background-color: var(--ui-basecolor) !important; */
+  /* --tab-hover-background-color: #45545E !important; */
+
+  /*includes tabstrip background*/
+  /* --chrome-background-color: var(--ui-darkcolor) !important; */
+
+  /*includes toolbar, urlbar*/
+  /* --chrome-secondary-background-color: var(--ui-basecolor) !important; */
+  /* --url-and-searchbar-background-color: var(--ui-background) !important; */
+  /* --chrome-selection-background-color: var(--ui-accent) !important; */
+
+  /*urlbar border*/
+  /* --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, 0.07) !important; */
+}
+
+.tab-label-container[textoverflow]:not([pinned]) {
+  mask-image: unset !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-close-button {
+  display: none !important;
+}
+
+.tabs-newtab-button {
+  display: none;
+}
+
+#TabsToolbar {
+  margin: 0 !important;
+}
+
+#nav-bar {
+  background-color: #000 !important;
+  border-top: 1px solid #333 !important;
+  border-bottom: 1px solid #333 !important;
+}
+
+#urlbar {
+  background-color: #000 !important;
+  border: none !important;
+}
+
+#urlbar[focused] {
+  border: none !important;
+}
+
+.tabbrowser-tab[selected] {
+  color: #fff !important;
+}
+
+#titlebar-buttonbox {
+  display: none;
+}
+
+
+/* Multiline tabs */
+/* https://www.reddit.com/r/firefox/comments/726p8u/multirow_tabs_firefox_ignores_mozboxflex/dngb8qf/ */
+
+.tabbrowser-tab:not([pinned]) {
+  flex-grow: 1;
+  min-width: 100px !important;
+}
+.tabbrowser-tab, .tab-background {
+  height: var(--tab-min-height);
+  color: #aaa !important;
+}
+.tab-stack {
+  width: 100%;
+}
+.tabbrowser-tabs .scrollbox-innerbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabbrowser-tabs .arrowscrollbox-scrollbox {
+  overflow: visible;
+  display: block;
+}
+#titlebar,#titlebar-buttonbox{
+  height:var(--tab-min-height) !important;
+}
+#titlebar{
+  margin-bottom:calc(var(--tab-min-height)*-1) !important;
+}
+#main-window[sizemode="maximized"] #titlebar{
+  margin-bottom:calc(6px + var(--tab-min-height)*-1) !important;
+}
+#main-window[sizemode="maximized"] #TabsToolbar{
+  margin-left:var(--tab-min-height);
+}
+#titlebar:active{
+  margin-bottom:0 !important;
+}
+#titlebar:active #titlebar-content{
+  margin-bottom:var(--tab-min-height) !important;
+}
+.tabbrowser-tabs .scrollbutton-up,.tabbrowser-tabs .scrollbutton-down,#alltabs-button,.tabbrowser-tab:not([fadein]){
+  display: none;
+}

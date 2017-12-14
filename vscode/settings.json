@@ -3,16 +3,9 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "Black",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.panel.location": "right",
-  "workbench.colorCustomizations": {
-    "contrastActiveBorder": "#333333",
-    "contrastBorder": "#333333",
-    "editor.lineHighlightBorder": "#333333",
-    "editorWhitespace.foreground": "#555555",
-    "editorRuler.foreground": "#333333"
-  },
   // editor
   "editor.lineHeight": 16,
   "editor.minimap.enabled": false,
