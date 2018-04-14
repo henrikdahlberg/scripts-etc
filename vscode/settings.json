@@ -3,7 +3,7 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Black",
+  "workbench.colorTheme": "Pitch Black",
   "workbench.startupEditor": "newUntitledFile",
   // editor
   "editor.lineHeight": 16,
