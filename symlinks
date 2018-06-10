@@ -1,0 +1,2 @@
+ln -s ~/Documents/repos/scripts-etc/vscode/settings.json ~/.config/Code/User/settings.json
+ln -s ~/Documents/repos/scripts-etc/vscode/keybindings.json ~/.config/Code/User/keybindings.json
