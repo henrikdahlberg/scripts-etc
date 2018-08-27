@@ -3,20 +3,33 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Pitch Black",
+  "workbench.colorTheme": "Monokai",
   "workbench.startupEditor": "newUntitledFile",
+
   // editor
-  "editor.lineHeight": 16,
-  "editor.minimap.enabled": false,
-  "editor.fontFamily": "Menlo, 'DejaVu Sans Mono', 'IBM Plex Mono', Consolas, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "files.trimTrailingWhitespace": true,
+  "editor.lineHeight": 13,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.maxColumn": 120,
+  "editor.minimap.side": "right",
+  "editor.fontFamily": "'monospace','DejaVu Sans Mono', 'IBM Plex Mono', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 12.5,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
-  "editor.renderIndentGuides": true,
-  "editor.detectIndentation": true,
+  "editor.renderIndentGuides": false,
+  "editor.detectIndentation": false,
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 1,
+
+  // font style settings
   "editor.tokenColorCustomizations": {
+    "[Pitch Black]": {
+      "comments": "#5e7b65"
+    },
     "textMateRules": [
       {
         "scope": "comment",
@@ -26,17 +39,16 @@
       }
     ]
   },
-  "editor.rulers": [
-    100,
-    120
-  ],
-  // cmake
-  //"cmake.cmakePath": "C:\\CMake",
+
+  // cpp
+
+
   // python
   "python.linting.enabled": true,
   "python.linting.pylintArgs": [
     "--extension-pkg-whitelist=numpy"
   ],
+
   // latex workshop
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.latex.toolchain": [
@@ -53,12 +65,23 @@
     }
   ],
   "latex-workshop.view.pdf.invert": 1,
-  "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 0,
-  //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "latex-workshop.view.pdf.viewer": "tab",
+
   "extensions.ignoreRecommendations": false,
 
-  "[json]": {
-        "editor.tabSize": 2
+
+  "files.associations": {
+    "*.args": "xml",
+    "*.eco": "ini",
+    "*.csh*": "shellscript",
+    "HDR.*": "ini"
   },
-  "latex-workshop.view.pdf.viewer": "tab",
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2
+  },
+
+  "cmake.configureOnOpen": false
+}

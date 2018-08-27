@@ -84,12 +84,17 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+bind 'set mark-symlinked-directories on'
 
 alias ls='ls -F --color --show-control-chars'
 alias l='ls'
 alias la='ls -A'
 alias lla='ls -la'
 alias ll='ls -l'
+alias u='cd ..'
+alias uu='cd ../..'
+alias uuu='cd ../../..'
+alias uuuu='cd ../../../..'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
