@@ -37,12 +37,15 @@
 
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
 
   "files.trimTrailingWhitespace": true,
 
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": true,
+
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
 
   // font style settings
   "editor.tokenColorCustomizations": {
@@ -80,7 +83,7 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/usr/bin/flake8",
   "python.linting.flake8Args": [
-    "--ignore=E221,E241,E251"
+    "--ignore=E221,E241,E251,E501"
   ],
 
 
@@ -113,12 +116,6 @@
   // latex workshop
   "latex-workshop.latex.recipes": [
     {
-      "name": "pdflatex",
-      "tools": [
-        "pdflatex"
-      ]
-    },
-    {
       "name": "latexmk",
       "tools": [
         "latexmk"
@@ -132,7 +129,13 @@
         "pdflatex",
         "pdflatex"
       ]
-    }
+    },
+    {
+      "name": "pdflatex",
+      "tools": [
+        "pdflatex"
+      ]
+    },
   ],
   "latex-workshop.latex.tools": [
     {
@@ -143,7 +146,8 @@
         "-interaction=nonstopmode",
         "-file-line-error",
         "-pdf",
-        "%DOC%"
+        "%DOC%",
+        "-outdir=%DIR%/build"
       ]
     },
     {
@@ -164,7 +168,10 @@
       ]
     }
   ],
-  "latex-workshop.view.pdf.invert": 1,
+  "latex-workshop.view.pdf.invert": 0,
   "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.latex.recipe.default": "first",
   "breadcrumbs.enabled": true,
+  "C_Cpp.updateChannel": "Insiders",
 }
